@@ -1,14 +1,10 @@
 
 ## VISION
-Nowadays, as the improvement of competitiveness. People have much pressure from work and study. Lots of feelings affect our mood. The main purpose of this device is regulate the color of the illumination and the music sound intensity and melody rhythm not only with the changes of the user’s mood but also the weather and temper conditions, in order to create the right atmosphere according to the users’ mood. 
+Nowadays indoor fitness becomes more normally around us. Through the long-term research and analysis. Scientist find that playing music while exercising can improve the result of fitness. It’s not only makes the speed of metabolism, burning of fat faster but also exercise the endurance of the practitioner, improve self-confidence. 
 
-We focus on the people who need to improve the mood in their own private space. It can also realize that people with good mood  feel more comfortable. (relaxing, party, dating, sleeping,  fitness etc.) 
+By the way,different exercising should match up different music rhythm. Consider to people who have no enough time to go to the Gym after work or study, () creating a good atmosphere while you doing fitness at home. According to the heart beats of user, the system can play the different music with suitable rhythm. All the music are divided to different kinds. At the same time, each kind of music provide suitable light around the space in order to make user feel more relaxed and enjoy the fitness.
 
-How does it works? We will set priorities for our sensing process. We provide a sensor act on the user directly like a smart bracelet to detects and collects information (such as heart rate, step numbers ) in first order, we either provide several sensors act on the external environment or import the calendar of the future details to the background of our ami system. 
-
-We’ll provide two possible ways yet the user interact with our system one of the physical button the other is by using one interface to control and record the musics and photos playing and the light colors conversion as you prefer.
-
-Considering the convenience and privacy we decide to put system into bedroom, it makes people’s feeling clearly without the influence of external factor. It’s easier to improve the mood and keep it. 
+() provide the distinctive fitness experience different from the Gym in your private space. It is suited for all the people who prefer to do fitness at home.
 
 ## AMI MAIN STEPS
 
