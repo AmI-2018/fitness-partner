@@ -40,7 +40,10 @@
             <a class="nav-link active" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#"> Architecture</a>
+            <a class="nav-link active" href="#architecture"> Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#technic-information">Technic information</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#team"> Team</a>
@@ -80,6 +83,7 @@
       </div>
     </div>
   </div>
+  <!-- AMI steps -->
   <div class="py-5 section-dark bg-light cover" id="ami-steps">
     <div class="container">
       <div class="row">
@@ -142,6 +146,7 @@
       </div>
     </div>
   </div>
+  <!-- Features -->
   <div class="py-5 bg-info cover" id="features">
     <div class="container">
       <div class="row text-center">
@@ -221,16 +226,149 @@
       </div>
     </div>
   </div>
+  <!-- Architecture -->
+  <div class="py-4" id="architecture">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 my-4">
+          <h1 class="text-left text-secondary m-3">System Architecture </h1>
+          <div class="row">
+            <div class="col-md-12">
+              <img class="img-fluid d-block my-4" src="assets/images/System Archtecture.png"> </div>
+          </div>
+          <h1 class="text-left text-secondary py-3 my-3">Hardware architecture</h1>
+          <ul class="">
+            <li class="text-left">
+              <b>Computational nodes:&nbsp;
+                <br> </b>&nbsp;Computer: To store data required and analyzing data to perform some action.
+              <br>
+              <br> </li>
+            <li class="text-left">
+              <b>Sensors:&nbsp;</b>
+              <br>Smart bracelet: To detect the heart beat rate of the user.
+              <br>
+              <br> </li>
+            <li class="text-left">
+              <b>Actuators:&nbsp;</b>
+              <br>
+              <i>Speakers:</i> To play the sound.&nbsp;
+              <br>
+              <i>Smart LEDS:</i> To light the room with different color.
+              <br>
+              <br> </li>
+            <li class="text-left">
+              <b>Interface:&nbsp;
+                <br> </b>
+              <i>Smart Phones:</i> Using an application to interact with users. </li>
+          </ul>
+          <h1 class="text-left text-secondary py-3">Software architecture:</h1>
+          <ul class="">
+            <li class="text-left">
+              <b>Smart Phone Application:&nbsp;</b>
+              <br>Display real-time heartbeat rate. Show the what the music is playing and can be changed by user’s preferences.&nbsp;
+              <br>
+              <br> </li>
+            <li class="text-left">
+              <b>Server:</b>
+              <br>It stores the music and the user’s heartbeat data by database.
+              <br>&nbsp; &nbsp;</li>
+            <li class="text-left">
+              <b>Computer Programs:</b>&nbsp;
+              <br>Analyzing the data and Controlling the speaker and LEDS.&nbsp;
+              <br>
+              <br> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Techinic information -->
+  <div class="bg-secondary py-4" id="technic-information">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 my-2">
+          <div class="row">
+            <div class="col-md-12 my-4">
+              <h1 contenteditable="true" class="my-5">Purpose and scope </h1>
+              <p class="text-justify p-1">The Purpose of our system is to create a good atmosphere for the indoor fitness with music and light. The main problem to be solved is that we should define 3 sections about the heart beats of user during the fitness to matching the suitable
+                music and light. Refer to the heart beats of a normal adult each minute.&nbsp;
+                <br>We define 3 sections according to calmness state, aerobic state and anaerobic&nbsp;(e.g. 60-100,100-150,150-200). We collect different kinds of music and divided it in rhythm (slow rhythm-medium rhythm-quick rhythm). And also matching
+                colour of LEDS with 3 different types (e.g. blue-green-orange).
+                <br>
+                <br> </p>
+              <h1 class="my-5">Project features </h1>
+              <table class="table" style="color:white;">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Description</th>
+                    <th> Priority</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>The sensor should detect people who enter the room.</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>The sensor should sense and measure the user's heart beats rate.</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>The system should store the user data for example: heart beats information, music, presets</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Check and analyse the data to get better user experience.</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Feedback to the speaker and LED lights according to different presets.</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>The user can&nbsp;interact with the system by using the smartphone application.</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h1 class="my-3">Hardware Components</h1>
+          <ol class="p-4">
+            <li class="my-1 text-left">Computer (OTS)</li>
+            <li class="my-1 text-left">Movement sensor</li>
+            <li class="my-1 text-left">Smart LED</li>
+            <li class="my-1 text-left">Smart band</li>
+            <li class="my-1 text-left">Scaled down model (may be need a lego scene?)</li>
+            <li class="my-1 text-left">Speaker: laptop built-in speaker&nbsp;(OTS)</li>
+          </ol>
+          <h1 class="my-3">Software Components</h1>
+          <ol class="py-4">
+            <li class="my-1 text-left">Python 3.6</li>
+            <li class="my-1 text-left">Database</li>
+            <li class="my-1 text-left">Smartphone environment (Not decided yet)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Team -->
-  <div class="bg-light py-4" id="team">
+  <div class="bg-info py-5" id="team">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h1>Team</h1>
+          <h1 class="my-4">Team</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-lg-3 animate-in-left col-4">
+        <div class="col-6 col-lg-3 animate-in-left col-4 my-3">
           <img src="assets/images/Member-1.jpg" class="center-block img-fluid rounded-circle my-2" width="300">
           <h3 class="mb-0 py-2">
             <b>WU TIANJIAN</b>
@@ -238,47 +376,47 @@
           <p contenteditable="true">wuskyjian@gmail.com</p>
           <div class="row">
             <div class="col-md-12">
-              <a href="https://github.com/wuskyjian" title="GitHub">
-                <i class=" fa text-primary fa-3x fa-github"></i>
+              <a target="_blank" href="https://github.com/wuskyjian" title="GitHub">
+                <i class="fa fa-3x fa-github text-light"></i>
               </a>
             </div>
           </div>
           <p class="text-muted p-1">Programmer and S/W developer</p>
         </div>
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 my-3">
           <img src="assets/images/Member-2.jpg" class="center-block img-fluid rounded-circle my-2" width="300">
           <h3 class="mb-0 py-2">FENG SHENGJIE</h3>
           <p>294778144@qq.com</p>
           <div class="row">
             <div class="col-md-12">
-              <a href="https://github.com/SHENGJIEFENG" title="GitHub">
-                <i class=" fa text-primary fa-3x fa-github"></i>
+              <a target="_blank" href="https://github.com/SHENGJIEFENG" title="GitHub">
+                <i class="fa fa-3x fa-github text-light"></i>
               </a>
             </div>
           </div>
           <p class="text-muted p-1">Programmer and S/W developer</p>
         </div>
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 my-3">
           <img src="assets/images/Member-3.jpg" class="center-block img-fluid rounded-circle my-2" width="300">
           <h3 class="mb-0 py-2">JIA ZIRUI</h3>
           <p> jzruirui@gmail.com</p>
           <div class="row">
             <div class="col-md-12">
-              <a href="https://github.com/jiazirui" title="GitHub">
-                <i class=" fa text-primary fa-3x fa-github"></i>
+              <a target="_blank" href="https://github.com/jiazirui" title="GitHub">
+                <i class="fa fa-3x fa-github text-light"></i>
               </a>
             </div>
           </div>
           <p class="text-muted p-1">H/W designer and Physical designer</p>
         </div>
-        <div class="col-6 col-lg-3 animate-in-right">
+        <div class="col-6 col-lg-3 animate-in-right my-3">
           <img src="assets/images/Member-4.jpg" class="center-block img-fluid rounded-circle my-2" width="300">
           <h3 class="mb-0 py-2">WANG YUHONG</h3>
           <p>s206975@studenti.polito.it</p>
           <div class="row">
             <div class="col-md-12">
-              <a href="https://github.com/wangyuhong666" title="GitHub">
-                <i class=" fa text-primary fa-3x fa-github"></i>
+              <a target="_blank" href="https://github.com/wangyuhong666" title="GitHub">
+                <i target="_blank" class="fa fa-3x fa-github text-light"></i>
               </a>
             </div>
           </div>
@@ -292,11 +430,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-left">Open issues</h1>
-          <ul class="list-group ">
-            <li class="align-items-center text-left">The strategies for computers to act when the user's heartbeat ratio changes.</li>
-            <li class="align-items-center text-left"> Need to learn the API to communicate with the LEDS and .</li>
-            <li class="align-items-center text-left">Develop the application for smartphone to interaction.</li>
+          <h1 class="text-left m-2">Open issues</h1>
+          <ul class="">
+            <li class="text-left my-2">The strategies for computers to act when the user's heartbeat ratio changes.</li>
+            <li class="text-left my-2">Need to learn the API to communicate with the LEDS and .</li>
+            <li class="text-left my-2">Develop the application for smartphone to interaction.</li>
           </ul>
         </div>
       </div>
