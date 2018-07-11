@@ -163,7 +163,7 @@
         <div class="col-md-12">
           <h1 class="mb-4 text-muted my-5 py-4">AMI Features</h1>
           <div class="row text-left mt-5">
-            <div class="col-md-4 my-3">
+            <div class="col-md-6 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
                   <i class="d-block mx-auto fa fa-3x fa-fighter-jet"></i>
@@ -176,7 +176,7 @@
               </div>
               <h5>The system is sentsitive to the heart rates of the user.</h5>
             </div>
-            <div class="col-md-4 my-3">
+            <div class="col-md-6 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
                   <i class="d-block mx-auto fa fa-3x fa-check"></i>
@@ -189,22 +189,9 @@
               </div>
               <h5 class="">The system will change the music and lights' color by detecting users' heartbeat rate in real time.</h5>
             </div>
-            <div class="col-md-4 my-3">
-              <div class="row mb-3">
-                <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-tasks"></i>
-                </div>
-                <div class="align-self-center col-10">
-                  <h4 class="text-muted px-2">
-                    <b>Adaptive</b>
-                  </h4>
-                </div>
-              </div>
-              <h5>F.P. is suitable for the users who prefer or have to do exercises at home.</h5>
-            </div>
           </div>
           <div class="row text-left py-2">
-            <div class="col-md-4 my-3 offset-md-2">
+            <div class="col-md-6 my-3 ">
               <div class="row mb-3">
                 <div class="text-center col-2">
                   <i class="d-block mx-auto fa fa-3x fa-cloud"></i>
@@ -217,19 +204,18 @@
               </div>
               <h5>It can an be easily installed in any private gym.</h5>
             </div>
-            <div class="col-md-4 my-3">
+            <div class="col-md-6 my-3">
               <div class="row mb-3">
                 <div class="text-center col-2">
-                  <i class="d-block mx-auto fa fa-3x fa-connectdevelop"></i>
+                  <i class="d-block mx-auto fa fa-3x fa-tasks"></i>
                 </div>
                 <div class="align-self-center col-10">
                   <h4 class="text-muted px-2">
-                    <b>Intelligence</b>
+                    <b>Adaptive</b>
                   </h4>
                 </div>
               </div>
-              <h5>The system can improve the&nbsp;accuracy of matching the music by accumulating user's&nbsp;
-                <br>using data.</h5>
+              <h5>F.P. is suitable for the users who prefer or have to do exercises at home.</h5>
             </div>
           </div>
         </div>
@@ -349,16 +335,19 @@
           <h1 class="my-3">Hardware Components</h1>
           <ol class="p-4">
             <li class="my-1 text-left">Computer (OTS)</li>
+            <li class="my-1 text-left">Andriod smartphone (OTS)</li>
             <li class="my-1 text-left">Philips Hue</li>
             <li class="my-1 text-left">Fitbit Charge</li>
-            <li class="my-1 text-left">Scaled down model (may be need a lego scene?)</li>
+            <li class="my-1 text-left">Raspberry Pi 3</li>
+            <li class="my-1 text-left">Heartbeat sensor</li>
             <li class="my-1 text-left">Speaker: laptop built-in speaker&nbsp;(OTS)</li>
           </ol>
           <h1 class="my-3">Software Components</h1>
           <ol class="py-4">
-            <li class="my-1 text-left">Python 3.6</li>
-            <li class="my-1 text-left">Database</li>
-            <li class="my-1 text-left">Smartphone environment (Not decided yet)</li>
+            <li class="my-1 text-left">Python version 3.6</li>
+            <li class="my-1 text-left">MariaDB 10.3</li>
+            <li class="my-1 text-left">Android OS API level 27</li>
+            <li class="my-1 text-left">Raspbian Stretch 4.1</li>
           </ol>
         </div>
       </div>
@@ -425,10 +414,15 @@
           <h1 class="text-left m-2">Open issues</h1>
           <ul class="">
             <li class="text-left my-2">
-              <s>The strategies for computers to act when the user's heartbeat ratio changes </s>.</li>
+              <s>The strategies for computers to act when the user's heartbeat ratio changes. </s>
+            </li>
             <li class="text-left my-2">
-              <s>Need to learn the API to communicate with the LEDS and </s>.</li>
-            <li class="text-left my-2">Develop the application for smartphone to interaction.</li>
+              <s>Need to learn the API to communicate with the LEDS and. </s>
+            </li>
+            <li class="text-left my-2">
+              <s>Develop the application for smartphone to interaction. </s>
+            </li>
+            <li class="text-left my-2">Heartbeat sensor is not very stable.</li>
           </ul>
         </div>
       </div>
@@ -439,8 +433,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p class="text-muted">Build by WU TIANJIAN. </p>
-          <p class="text-muted">© Copyright 2018 Pingendo - All rights reserved. </p>
+          <p class="text-muted">Build by WU TIANJIAN, FENG SHENGJIE. </p>
         </div>
       </div>
     </div>
@@ -451,6 +444,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in a same page -->
   <script src="js/smooth-scroll.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
 
 </html>
