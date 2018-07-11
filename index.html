@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
           <h1 class="display-2 d-none d-md-block">Fitness Partner</h1>
-          <h1 class="display-4 d-block d-md-none">Conference Pingendo</h1>
+          <h1 class="display-4 d-block d-md-none">Fitness Partner</h1>
           <h1>Give you a better private gym enviroment.</h1>
         </div>
       </div>
@@ -102,49 +102,63 @@
         </div>
       </div>
       <div class="row">
-        <div class="py-5 col-md-6">
+        <div class="col-md-6 py-3">
           <div class="row">
             <div class="text-center col-4">
-              <i class="d-block fa fa-5x fa-eye my-4"></i>
+              <i class="d-block fa fa-5x fa-eye m-3"></i>
             </div>
             <div class="col-8">
               <h4 class="mb-3 text-primary">Sensing</h4>
-              <p class="my-1">Detect the daily heartbeat rate of user by smart band. Use heartbeat sensor to measure the real-time heartbeat.</p>
+              <ul class="">
+                <li>Collecting the daily rest heartbeat rate of user by smart band.</li>
+                <li>Using heartbeat sensor to detect the real-time heartbeat while doing sport.</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="py-5 col-md-6">
+        <div class="col-md-6 py-3">
           <div class="row">
             <div class="text-center col-4">
-              <i class="d-block fa fa-5x fa-map-o my-4"></i>
+              <i class="d-block fa fa-5x fa-map-o my-3"></i>
             </div>
             <div class="col-8">
               <h4 class="mb-3 text-primary">Reasoning</h4>
-              <p class="my-1">Exercising while listening music improve the result of fitness. According to the heartbeat of user, F.P provide the more suitable music during the exercising, The colors of lights in environment change with heartbeat as user like in order to know the state of exercise clearly. It also create a good atmosphere during the fitness. </p>
+              <ul class="">
+                <li>Listening to music while doing sports improves the result of fitness.&nbsp;According to the heartbeat of user, &nbsp;F.P provide more suitable music during the exercising.</li>
+                <li>The color of lights changes with the heartbeat of user in order to help user know the state of exercise clearly, which create a good atmosphere during fitness.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="py-5 col-md-6">
+        <div class="col-md-6 py-3">
           <div class="row">
             <div class="text-center col-4">
-              <i class="d-block fa fa-5x fa-exchange p-3"></i>
+              <i class="d-block fa fa-5x fa-exchange m-2"></i>
             </div>
             <div class="col-8">
               <h4 class="mb-3 text-primary">Interacting&nbsp;</h4>
-              <p class="my-1">Provides the users a mobile application to start the fitness. Customize the total time of fitness, including the warm-up time and the initial light color in different sections. Show the real-time heartbeat rate of user. Auto-play music and change the colors of light in the different sections according to the heartbeat rate of user. Remind user time out or continue the fitness.</p>
+              <ul class="">
+                <li>Provides the users a mobile application to manage the fitness.</li>
+                <li>&nbsp;Customize the enviroment variables for fitness, including the playing list and the light color for different heartbeat range.&nbsp;</li>
+                <li>Show real-time heartbeat rate of user on the smart phone.&nbsp;</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="py-5 col-md-6">
+        <div class="col-md-6 py-3">
           <div class="row">
             <div class="text-center col-4">
-              <i class="d-block fa fa-5x fa-bolt m-3"></i>
+              <i class="d-block fa fa-5x fa-bolt m-2"></i>
             </div>
             <div class="col-8">
               <h4 class="mb-3 text-primary">Acting</h4>
-              <p class="my-1">The system is able to control LEDS' color. Change or pause the music as user like in the current section of heartbeat rate.</p>
+              <ul class="">
+                <li>Change or pause the music as user wish during the current section of excersicing &nbsp;by using the android applicaion.</li>
+                <li>&nbsp;Remind user time up of warm up excercise by turning on LEDs.</li>
+                <li>Auto-change suitable music and colors of LED according to the real-time heartbeat rate of the user in different range.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -169,7 +183,7 @@
                   </h4>
                 </div>
               </div>
-              <h5>The system can sense the daily of user before fitness and real-time heartbeat rate during the fitness.</h5>
+              <h5>The system can sense the daily resr heart beat rate of user before fitness and real-time heartbeat rate during the fitness.</h5>
             </div>
             <div class="col-md-6 my-3">
               <div class="row mb-3">
@@ -230,45 +244,101 @@
           <h1 class="text-left text-secondary py-3 my-3">Hardware architecture</h1>
           <ul class="">
             <li class="text-left">
-              <b>Computational nodes:&nbsp;
-                <br> </b>&nbsp;Computer: To store data required and analyzing data to perform some action.
+              <b class="text-uppercase">Computational nodes:&nbsp;</b>
               <br>
-              <br> </li>
+              <br>
+              <em>
+                <b>Server:</b>
+              </em> Data analyzing, database storage and server program hosting. Controlling rooms lights, music playing and Raspberry Pi.
+              <br>
+              <br>
+              <i>
+                <b>Raspberry Pi:</b>&nbsp;</i>It controls the heart beat sensor, calculating the heart beat rate data and send it to the server.
+              <br>&nbsp; &nbsp;</li>
             <li class="text-left">
-              <b>Sensors:&nbsp;</b>
-              <br>Smart bracelet: To detect the heart beat rate of the user.
+              <b class="text-uppercase">Devices:</b>&nbsp;
               <br>
-              <br> </li>
+              <br>
+              <i>
+                <b>Heartbeat sensor:</b>
+              </i> Gathering the user heart beat rate data and transfer it into voltage signals.&nbsp;
+              <br>
+              <br>
+              <i>
+                <b>Smart band:</b>
+              </i> It records user’s daily heart beat rate and send them to the cloud server for further analyzing.
+              <br>
+              <br>
+              <i>
+                <b>Room LEDs: </b>
+              </i>They indicate the user’s exercising state (Heavy or light), they change into the suitable color range defined by the user when the user’s heart beat rate rises or falls.
+              <br>
+              <br>
+              <i>
+                <b>Speaker:</b>
+              </i> Playing suitable music. It will change into suitable rhythm by different level (high or low) of users’ heartbeat rate.
+              <br>
+              <br>
+            </li>
             <li class="text-left">
-              <b>Actuators:&nbsp;</b>
+              <b class="text-uppercase">User Interface Device:</b>
               <br>
-              <i>Speakers:</i> To play the sound.&nbsp;
               <br>
-              <i>Smart LEDS:</i> To light the room with different color.
-              <br>
-              <br> </li>
-            <li class="text-left">
-              <strong>Interface:&nbsp;
-                <br> </strong>
-              <em>Smart Phones:</em> Using an application which can let users change the music and light color. </li>
+              <i>
+                <b>Smart Phones:</b>
+              </i> It runs an android application; this program will show the users needed information and allowed user to change the system’s device state. </li>
           </ul>
           <h1 class="text-left text-secondary py-3">Software architecture:</h1>
           <ul class="">
             <li class="text-left">
-              <b>Smart Phone Application:&nbsp;</b>
-              <br>Display real-time heartbeat rate. Show the what the music is playing and can be changed by user’s preferences.&nbsp;
+              <b>Python Server:</b>
               <br>
-              <br> </li>
-            <li class="text-left">
-              <b>Server:</b>
-              <br>It stores the music and the user’s heartbeat data by database.
-              <br>&nbsp; &nbsp;</li>
-            <li class="text-left">
-              <b>Computer Programs:</b>&nbsp;
-              <br>Analyzing the data and Controlling the speaker and LEDS.&nbsp;
+              <br>The python server is the computational center of the system, it runs on the Server. It is built by five software modules:
               <br>
-              <br> </li>
+              <br>
+              <i>
+                <b>Database: </b>
+              </i>Storage the music location for different BPM.
+              <br>
+              <br>
+              <i>
+                <b>Logic:</b>
+              </i> Strategies to change light color and music rhythm.
+              <br>
+              <br>
+              <i>
+                <b>Network Interface: </b>
+              </i>To communicate with Android App, Raspberry, Phillipe Hue light and Fitbit cloud server.
+              <br>
+              <br>
+              <i>
+                <b>Music module:</b>
+              </i> Provide the music playing function.
+              <br>
+              <br>
+              <i>
+                <b>Task manger:</b>
+              </i> To perform corresponding action by receiving the command from Android Application.
+              <br>
+              <br>
+            </li>
+            <li class="text-left">
+              <b>Android App:</b>
+              <br>
+              <br>
+              <i>
+                <b>User interface:</b>
+              </i> It allows user to initialize necessary data for the sever or reset it. Showing the playing music names and real-time heart beat rate. User can also turn on/off the lights, change the lights color for different sporting range and Pause/Resume
+              Playing/Change the playing music.
+              <br>
+              <br>
+            </li>
+            <li class="text-left">
+              <b>Raspberry Pi Software:</b>
+              <br>
+              <br>It analyzes and converting the voltage signal into heartbeat rate represented by digitals, connect to the Python server by LAN. </li>
           </ul>
+          <h1 class="text-left text-secondary py-3">Network architecture:</h1>
         </div>
       </div>
     </div>
@@ -281,13 +351,14 @@
           <div class="row">
             <div class="col-md-12 my-4">
               <h1 contenteditable="true" class="my-5">Purpose and scope </h1>
-              <p class="text-justify p-1">The Purpose of our system is that improve the result of fitness(speed of metabolism, burning of fat faster ) and create a good atmosphere for the indoor fitness with music and light. 
-                <br>Firstly, the system recognizes the specific user and receive the rest heartbeat rate the last one week from user’s smart band to define the initial data.
-                <br>User starts to warm-up, the system receives the command to play the random suitable music in warm-up heartbeat rate.At the same time,the system counting down with the value user set before.
-                <br>It started the official fitness state when the warm-up is time out.According to the heartbeat rate during the fitness,the system compare the data with the initial data to match up the music from users’ data base and light suit for the change of rate.
-				<br>The colors changing of LED has 3 sections as music playing(anaerobic exercise,aerobic exercise,maximum heartbeat rate state).The colors changing of LED with the purpose of making users know about their sate of exercise directly.It will be a good atmosphere during the fitness. It also can define the colors of light and music as user like any time.
-				<br>The system can be control to stop or not any time.At the end of fitness,the music stop playing and the light turn off.
-			  </p>
+              <p class="text-justify p-1">The Purpose of our system is that improve the result of fitness(speed of metabolism, burning of fat faster&nbsp;) by creating a good atmosphere for the indoor fitness with music and light.
+                <br>First of all, the system collects the user's rest heartbeat rate of the last one week from cloud server to get a more accurate heartbeat range data.
+                <br>When user starts to warm-up, the system receives the command to play the random suitable music in warm-up heartbeat rate. At the same time, the system begins counting down with the warm-up time user set before.
+                <br>It started the official fitness state when the warm-up time is over. According to the heartbeat rate during the fitness,the system compare the data with the initial data to match up the music from users’ data base and light suit for the
+                change of rate.
+                <br>The colors changing of LED has 3 sections as music playing(anaerobic exercise,aerobic exercise,maximum heartbeat rate state).The colors changing of LED with the purpose of making users know about their sate of exercise directly.It will
+                be a good atmosphere during the fitness. It also can define the colors of light and music as user like any time.
+                <br>The system can be control to stop or not any time.At the end of fitness,the music stop playing and the light turn off. </p>
               <h1 class="my-5">Project features </h1>
               <table class="table" style="color:white;">
                 <thead>
@@ -440,9 +511,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in a same page -->
   <script src="js/smooth-scroll.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
 </body>
 
 </html>
