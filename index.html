@@ -243,7 +243,7 @@
           </div>
           <h1 class="text-left text-secondary py-3 my-3">Hardware architecture</h1>
           <ul class="">
-            <li class="text-left">
+            <li class="text-justify">
               <b class="text-uppercase">Computational nodes:&nbsp;</b>
               <br>
               <br>
@@ -255,7 +255,7 @@
               <i>
                 <b>Raspberry Pi:</b>&nbsp;</i>It controls the heart beat sensor, calculating the heart beat rate data and send it to the server.
               <br>&nbsp; &nbsp;</li>
-            <li class="text-left">
+            <li class="text-justify">
               <b class="text-uppercase">Devices:</b>&nbsp;
               <br>
               <br>
@@ -279,7 +279,7 @@
               </i> Playing suitable music. It will change into suitable rhythm by different level (high or low) of users’ heartbeat rate.
               <br>
               <br> </li>
-            <li class="text-left">
+            <li class="text-justify">
               <b class="text-uppercase">User Interface Device:</b>
               <br>
               <br>
@@ -287,9 +287,9 @@
                 <b>Smart Phones:</b>
               </i> It runs an android application; this program will show the users needed information and allowed user to change the system’s device state. </li>
           </ul>
-          <h1 class="text-left text-secondary py-3">Software architecture:</h1>
+          <h1 class="text-left text-secondary py-3">Software architecture</h1>
           <ul class="">
-            <li class="text-left">
+            <li class="text-justify">
               <b>Python Server:</b>
               <br>
               <br>The python server is the computational center of the system, it runs on the Server. It is built by five software modules:
@@ -335,8 +335,8 @@
               <br>
               <br>It analyzes and converting the voltage signal into heartbeat rate represented by digitals, connect to the Python server by LAN. </li>
           </ul>
-          <h1 class="text-left text-secondary py-3">Network architecture:</h1>
-        </div>
+          <h1 class="text-left text-secondary py-4">Network architecture</h1>
+          <img class="img-fluid d-block my-4" src="assets/images/Network Architecture.png"> </div>
       </div>
     </div>
   </div>
@@ -373,27 +373,63 @@
                   <tr> </tr>
                   <tr>
                     <td>1</td>
-                    <td>The sensor should sense and measure the user's heart beats rate.</td>
+                    <td class="text-justify">App interface can display heartbeat rate, playing music name, rest time of warm up sport and duration of doing exercise.</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td> 2</td>
-                    <td>The system should store the user data for example: heart beats information, music, presets</td>
-                    <td>2</td>
+                    <td class="text-justify">Initialize server by entering necessary message (Age, rest heartbeat rate).</td>
+                    <td>1</td>
                   </tr>
                   <tr>
                     <td> 3</td>
-                    <td>Analysing the data to get better choices on user's liked music and light's colors.</td>
+                    <td class="text-justify">Play, pause and change the music when needed.</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td> 4</td>
-                    <td>Feedback to the speaker and LED lights according to different presets.</td>
+                    <td class="text-justify">Modify LED colors for three different sport states (anaerobic exercise, aerobic exercise, maximum heartbeat rate state).</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <td> 5</td>
-                    <td>The user can&nbsp;change light's color, music and provide prefereneces by using designed smartphone application.</td>
+                    <td class="text-justify">Switch on/off LED during fitness.
+                      <br> </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="text-justify">Turn on/off demo mode. </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td> 7</td>
+                    <td class="text-justify">Every time before doing sports, update rest heartbeat rate from the Fitbit cloud server. </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td> 8</td>
+                    <td class="text-justify">Define the warm-up exercise time and rest time during each group of anaerobic exercise. </td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td> 9</td>
+                    <td class="text-justify">Define the Fitbit account for synchronizing rest heartbeat data from cloud server. </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td> 10</td>
+                    <td class="text-justify">Update music database when adding new music into corresponding folders. </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td> 11</td>
+                    <td class="text-justify">Playing suitable music according to the heartbeat rate. </td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td> 12</td>
+                    <td class="text-justify">Control the colors of LED to inform user the state of exercise. </td>
                     <td>1</td>
                   </tr>
                 </tbody>
